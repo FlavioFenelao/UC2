@@ -1,8 +1,11 @@
 .hero{
     height: 80vh;
     color: black;
+    background-image: radial-gradient("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1UX_widURfAKagop5-Pse3s32pXS6m4kqkg&s");
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
+
+
