@@ -116,20 +116,46 @@
       <p class="mb-0">2025 Store. Todos os direitos reservados</p>
     </footer>
     <script>
-      function enviarCadastro(event) {
-        event.preventDefault();
+      async function enviarCadastro(event){
+           event.preventDefault();
 
-        const dados = {
-          username: document.getElementById("username").value,
-          email: document.getElementById("email").value,
-          password: document.getElementById("password").value,
-          role: document.getElementById("role").value,
-        };
+           const dados = {
 
-        console.log(dados);
-      }
+               username: document.getElementById("username").value,
+               email: document.getElementById("email").value,
+               password: document.getElementById("password").value,
+               role: document.getElementById("role").value,
 
-      document.querySelector("form").addEventListener("submit", enviarCadastro);
-    </script>
-  </body>
+           };
+           
+           try {
+           const response = await fetch("http://localhost:8080/auth/register", {
+               method:"POST",
+
+               headers: {
+                   "Content-type":"application/json"
+               },
+
+               body: JSON.stringify(dados)
+
+            });
+
+            if(response.ok){
+               const resultado = await response.json();
+               alert("Cadastro enviado com sucesso!");
+               console.log("Resposta da api", resultado);
+            }else{
+               alert("Erro ao enviar cadastro", response);
+
+            }
+           }catch(error){
+               alert("Erro desconhecido!");
+           }
+
+       }
+
+       document.querySelector("form").addEventListener("submit", enviarCadastro);
+   </script>
+   
+</body>
 </html>
