@@ -1,0 +1,96 @@
+:root {
+    --primary-color: #0d6efd;
+    --text-color: #333;
+    --bg-light: #f8f9fa;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    color: var(--text-color);
+    background-color: lightpink;
+    scroll-behavior: smooth;
+  }
+  
+  .hero {
+    height: 60vh;
+    background: url('https://www.marisa.com.br/medias/sys_master/images/images/hae/hd6/16692482310174/20250325-HOMEPAGE-ROTATIVO-DESKTOP-BPDP0130OFF.gif') no-repeat center center / cover;
+  }
+  
+  .animated {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+  }
+  
+  .delay-1 {
+    animation-delay: 0.3s;
+  }
+  .delay-2 {
+    animation-delay: 0.6s;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .radius{
+    border-radius: 150px;
+  }
+
+  
+  .hero{
+    height: 50vh;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.bg-blue {
+    background-color: rgb(230, 235, 235);
+}
+
+
+.img-altura {
+    height: 550px;
+}
+.foto01 {
+    background-image: url('https://lojafarm.vteximg.com.br/arquivos/ids/3540227-2000-2783/342598_51492_2-VESTIDO-CROPPED-MARCELLE.jpg?v=638751560998500000');
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+    border-bottom: 15px solid #fff;
+}
+.foto02 {
+    background-image: url('https://lojafarm.vteximg.com.br/arquivos/ids/3528628-1416-2124/341901_02390_2-VESTIDO-CORSELET-ALCINHAS.jpg?v=638739644334230000');
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+    border-top: 16px solid #fff;
+    border-left: 23px solid #fff;
+    border-right: 23px solid #fff;
+}
+.foto03 {
+    background-image: url('https://lojafarm.vteximg.com.br/arquivos/ids/3490682-2000-2783/339862_50282_2-VESTIDO-LONGO-ESTAMPADO-RIO-MARACANA.jpg?v=638725844663800000');
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+    border-top: 16px solid #fff;
+    border-left: 8px solid #fff;
+    border-right: 8px solid #fff;
+}
+.banner-produto{
+    /*background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://www.farmrio.com.br/live/invoke/website/loaders/image.ts?src=https%3A%2F%2Fcf.farmriosoma.farmrio.com.br%2Fsite%2F2025%2F04_ABRIL%2F01_VITRINE%2Fcomplementares%2F01-04-25-banner-categoria-desktop.jpg");
+    */background-image: url("https://www.farmrio.com.br/live/invoke/website/loaders/image.ts?src=https%3A%2F%2Fcf.farmriosoma.farmrio.com.br%2Fsite%2F2025%2F04_ABRIL%2F01_VITRINE%2Fcomplementares%2F01-04-25-banner-categoria-desktop.jpg");
+    height: 270px;
+    background-position: top;
+    opacity: 0.6;
+    background-color: black;
+    /*background-blend-mode: darken;*/
+}
+.centralizar {
+    padding-top: 150px;
+    padding-left: 30%;
+}

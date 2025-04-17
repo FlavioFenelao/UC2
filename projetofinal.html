@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marisa</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="bg-dark text-white p-3">
+    <nav class="container d-flex justify-content-between align-items-center" aria-label="Navegação principal">
+      <h1 class="fs-4">Marisa</h1>
+      <ul class="nav">
+        <li class="nav-item"><a href="https://www.marisa.com.br/feminino/c/roupas?id=20250410&name=MOSAICO1&position=P02&category=HOMEPAGE&criativo=20250410-HOMEPAGE-MOSAICO1-DESKTOP-P02-FEMININO" target="_blank" class="nav-link text-white">Produtos</a></li>
+        <li class="nav-item"><a href="#sobre" class="nav-link text-white">Sobre</a></li>
+        <li class="nav-item"><a href="projetocadastro.html" class="nav-link text-white">Cadastro</a></li>
+        <li class="nav-item"><a href="#servicos" class="nav-link text-white">Serviços</a></li>
+        <li class="nav-item"><a href="#contato" class="nav-link text-white">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  
+
+  <!-- Hero Section -->
+  <section class="hero text-center text-white d-flex align-items-center justify-content-center">
+    <div>
+      <h2>Transformamos ideias em soluções</h2>
+      <p>Design moderno, acessível e eficiente</p>
+      <a href="#contato" class="btn btn-primary mt-3">Fale Conosco</a>
+    </div>
+  </section>
+
+  <!-- Sobre Nós -->
+  <section id="sobre" class="container py-5">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2021/12/Marisa_Loja-Shopping-Dom-Pedro_2.jpg" class="img-fluid rounded radius" alt="Equipe trabalhando" />
+      </div>
+      <div class="col-md-6">
+        <h3>Quem somos?</h3>
+        <p>A Marisa é a maior rede de moda feminina e lingerie e uma das maiores redes de vestuário masculino e infantil do Brasil. A rede está presente em todas as regiões do Brasil e conta com mais de 340 lojas em ruas e shoppings3. A Marisa foi pioneira a usar o sistema de vendas online e, com isso, conseguiu atingir o público de cidades onde a empresa não tinha loja física.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Serviços -->
+  <section id="servicos" class="bg-light py-5 text-center">
+    <div class="container">
+      <h3 class="mb-4">Nossos Serviços</h3>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm animated fade-in">
+            <div class="card-body">
+              <h5 class="card-title">Moda Feminina</h5>
+              <p class="card-text">Para todos os gostos e tamanhos.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm animated fade-in delay-1">
+            <div class="card-body">
+              <h5 class="card-title">Acessibilidade</h5>
+              <p class="card-text">Web para todos, inclusive pessoas com deficiência.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm animated fade-in delay-2">
+            <div class="card-body">
+              <h5 class="card-title">Calçados</h5>
+              <p class="card-text">Variedade de marcas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="container py-5">
+    <h3 class="text-center mb-4">Entre em Contato</h3>
+    <form class="mx-auto" style="max-width: 600px;">
+      <div class="mb-3">
+        <label for="nome" class="form-label">Nome</label>
+        <input type="text" class="form-control" id="nome" aria-label="Nome completo" required />
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">E-mail</label>
+        <input type="email" class="form-control" id="email" aria-label="Endereço de e-mail" required />
+      </div>
+      <div class="mb-3">
+        <label for="mensagem" class="form-label">Mensagem</label>
+        <textarea class="form-control" id="mensagem" rows="4" aria-label="Mensagem"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">© 2025 Marisa. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
